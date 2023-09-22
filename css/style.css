@@ -65,13 +65,6 @@ header {
     margin-bottom: 30px;
 }
 
-header h1 {
-    font-size: 2rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px #00000087;
-}
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -100,7 +93,7 @@ nav ul span {
 .banner {
     width: 100%;
     height: 330px;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
 
     display: flex;
     justify-content: center;
@@ -326,13 +319,13 @@ nav ul span {
     font-family: 'Mooli', sans-serif;
     
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .intro .greeting{
     width: 690px;
     height: 200px;
-    /* background-color: antiquewhite; */
+    background-color: antiquewhite;
 
 }
 .intro .greeting p{
@@ -344,7 +337,7 @@ nav ul span {
 .intro .award{
     width: 350px;
     height: 200px;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     margin-left: 25px;
 }
 .intro .award p{
@@ -507,8 +500,8 @@ h3::after{
     flex-direction: column;
 }
 #meetingroom p{
-    width: 1068px;
-    font-size: 1.1rem;
+    width: 1060px;
+    font-size: 1.05rem;
     margin-bottom: 20px;
 }
 .meeting{
@@ -733,4 +726,162 @@ footer .about{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 420px) {
+    header img{
+        width: 40px;
+        /* background-color: #000; */
+    }
+    nav ul{
+        width: 360px;
+        height: 30px;
+        justify-content: center;
+    }
+    nav ul li{
+        margin-right: 15px;
+        font-size: 0.6rem;
+    }
+    nav ul span{
+        margin-left: 15px;
+    }
+    .banner{
+        height: 145px;
+    }
+    .bannerani{
+        top: 25%;
+        left: 48%;
+    }
+    .bannerani .welcome{
+        transform: translateX(23%);
+    }
+    .bannerani span{
+        font-size: 0.7rem;
+        letter-spacing: 0px;
+    }
+    .bannerbox{
+        width: 370px;
+        height: 145px;
+    }
+    .bannerphoto{
+        width: 360px;
+        height: 160px;
+        justify-content: space-between;
+    }
+    .bannerphoto::before{
+        width: 360px;
+        height: 140px;
+    }
+    .bimg{
+        width: 70px;
+        height: 140px;
+    }
+    .intro{
+        height: 150px;
+    }
+    .intro .greeting{
+        width: 220px;
+        height: 110px;
+    }
+    .intro .greeting p{
+        font-size: 0.6rem;
+        line-height: 13px;
+        letter-spacing: 0px;
+    }
+    .intro .award{
+        width: 150px;
+        height: 110px;
+        margin-left: 5px;
+    }
+    .intro .award p{
+        font-size: 0.6rem;
+        margin-bottom: 5px;
+    }
+    .intro .award i{
+        font-size: 0.8rem;
+    }
+    h3{
+        font-size: 1rem;
+        letter-spacing: 0.3px;
+        margin-bottom: 3px;
+    }
+    .room{
+        height: 850px;
+    }
+    .roombox{
+        width: 360px;
+        height: 1000px;
+        justify-content: space-around;
+    }
+    .roombox h3{
+        margin-bottom: 15px;
+    }
+    .roomcontent{
+        width: 360px;
+        height: 350px;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+    .roomcontent .rcontent{
+        width: 360px;
+        height: 130px;
+    }
+    .rcontent .rabout{
+        margin-left: 13px;
+        padding-top: 5px;
+    }
+    .rcontent .rabout h4{
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    .rcontent .rabout p{
+        font-size: 0.7rem;
+        margin-bottom: 5px;
+    }
+    .roomcontent .rimg{
+        width: 165px;
+        height: 130px;
+    }
+    .facilities{
+        height: 325px;
+    }
+    .facilities h3{
+        margin-bottom: 5px;
+    }
+    .pricebox{
+        width: 335px;
+        height: 155px;
+        flex-wrap: wrap;
+    }
+    .pricebox .pricecontent{
+        width: 100px;
+        height: 60px;
+    }
+    .pricecontent i{
+        font-size: 0.8rem;
+    }
+    .pricecontent h4{
+        font-size: 0.6rem;
+        margin: 2px 0;
+    }
+    #meetingroom{
+        height: 1650px;
+        margin-top: 5px;
+    }
+    #meetingroom p{
+        width: 360px;
+        font-size: 0.6rem;
+        margin-top: 5px;
+    }
+    .meeting{
+        width: 360px;
+        height: 800px;
+        flex-wrap: wrap;
+    }
+    .meeting .setup1, .setup2, .setup3, .setup4, .setup5, .setup6{
+        width: 360px;
+        height: 250px;
+    }
 }
