@@ -532,8 +532,9 @@ h3::after{
     text-transform: uppercase;
     letter-spacing: 1px;
     text-shadow: 1px 1px 5px #000;
-    text-align: center;
-    line-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 
     position: absolute;
@@ -883,5 +884,9 @@ footer .about{
     .meeting .setup1, .setup2, .setup3, .setup4, .setup5, .setup6{
         width: 360px;
         height: 250px;
+    }
+    .meeting .setup1::before,.setup2::before,.setup3::before,.setup4::before,.setup5::before,.setup6::before{
+        font-size: 1rem;
+        letter-spacing: 0.5px;
     }
 }
