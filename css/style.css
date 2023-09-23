@@ -93,7 +93,7 @@ nav ul span {
 .banner {
     width: 100%;
     height: 330px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 
     display: flex;
     justify-content: center;
@@ -319,14 +319,13 @@ nav ul span {
     font-family: 'Mooli', sans-serif;
     
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .intro .greeting{
     width: 690px;
     height: 200px;
-    background-color: antiquewhite;
-
+    /* background-color: antiquewhite; */
 }
 .intro .greeting p{
     font-size: 1.1rem;
@@ -337,7 +336,7 @@ nav ul span {
 .intro .award{
     width: 350px;
     height: 200px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     margin-left: 25px;
 }
 .intro .award p{
@@ -667,7 +666,7 @@ h3::after{
     width: 450px;
     height: 650px;
     /* background-color: #19191e; */
-    border: 1px solid #000;
+    border: 1px solid #0000006a;
     box-shadow: 1px 1px 2px 3px #0000005c;
 }
 .spaphoto{
@@ -737,7 +736,7 @@ footer .about{
         /* background-color: #000; */
     }
     nav ul{
-        width: 360px;
+        width: 300px;
         height: 30px;
         justify-content: center;
     }
@@ -750,6 +749,7 @@ footer .about{
     }
     .banner{
         height: 145px;
+        align-items: center;
     }
     .bannerani{
         top: 25%;
@@ -781,24 +781,25 @@ footer .about{
     }
     .intro{
         height: 150px;
+        justify-content: center;
     }
     .intro .greeting{
         width: 220px;
-        height: 110px;
+        height: 115px;
     }
     .intro .greeting p{
-        font-size: 0.6rem;
-        line-height: 13px;
-        letter-spacing: 0px;
+        font-size: 0.58rem;
+        line-height: 14px;
+        letter-spacing: 0.2px;
     }
     .intro .award{
-        width: 150px;
-        height: 110px;
+        width: 130px;
+        height: 115px;
         margin-left: 5px;
     }
     .intro .award p{
-        font-size: 0.6rem;
-        margin-bottom: 5px;
+        font-size: 0.56rem;
+        margin-bottom: 6px;
     }
     .intro .award i{
         font-size: 0.8rem;
@@ -812,21 +813,21 @@ footer .about{
         height: 850px;
     }
     .roombox{
-        width: 360px;
+        width: 350px;
         height: 1000px;
-        justify-content: space-around;
+        justify-content: center;
     }
     .roombox h3{
         margin-bottom: 15px;
     }
     .roomcontent{
-        width: 360px;
+        width: 350px;
         height: 350px;
         flex-wrap: wrap;
         margin-bottom: 0px;
     }
     .roomcontent .rcontent{
-        width: 360px;
+        width: 350px;
         height: 130px;
     }
     .rcontent .rabout{
@@ -872,21 +873,127 @@ footer .about{
         margin-top: 5px;
     }
     #meetingroom p{
-        width: 360px;
+        width: 350px;
         font-size: 0.6rem;
         margin-top: 5px;
     }
     .meeting{
-        width: 360px;
+        width: 350px;
         height: 800px;
         flex-wrap: wrap;
     }
     .meeting .setup1, .setup2, .setup3, .setup4, .setup5, .setup6{
-        width: 360px;
+        width: 350px;
         height: 250px;
     }
     .meeting .setup1::before,.setup2::before,.setup3::before,.setup4::before,.setup5::before,.setup6::before{
         font-size: 1rem;
         letter-spacing: 0.5px;
+    }
+    #qsv h3{
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+    #qsv .service{
+        flex-wrap: wrap;
+        width: 350px;
+    }
+    .service .servicecontent{
+        width: 200px;
+    }
+    .service .servicecontent p{
+        font-size: 0.6rem;
+        margin-top: 50px;
+    }
+    .service .servicecontent h4{
+        font-size: 0.7rem;
+        margin: 8px 0 5px 0;
+    }
+    .service .servicecontent ul li{
+        letter-spacing: 0.3px;
+        font-size: 0.6rem;
+    }
+    .servicephoto{
+        width: 110px;
+        margin-left: 5px;
+    }
+    #qsv img{
+        width: 100px;
+        height: 90px;
+    }
+    #qsv .pool{
+        flex-wrap: wrap;
+        width: 350px;
+        height: 600px;
+    }
+    .poolphoto{
+        width: 110px;
+    }
+    .poolcontent{
+        width: 250px;
+    }
+    .pool .poolcontent{
+        width: 220px;
+    }
+    .pool .poolcontent p{
+        font-size: 0.6rem;
+        margin-top: 50px;
+    }
+    .pool .poolcontent h4{
+        font-size: 0.7rem;
+        margin: 8px 0 5px 0;
+    }
+    .pool .poolcontent ul li{
+        letter-spacing: 0.3px;
+        font-size: 0.6rem;
+        line-height: 17px;
+    }
+    #qsv .poolphoto img{
+        width: 100px;
+    }
+    #spa{
+        height: 415px;
+        margin-bottom: 15px;
+    }
+    #spa h3{
+        margin-bottom: 13px;
+    }
+    .spabox{
+        width: 300px;
+        height: 450px;
+    }
+    .spaphoto{
+        width: 300px;
+        height: 180px;
+    }
+    .spacontent{
+        padding-left: 5px;
+        padding-bottom: 10px;
+    }
+    .spacontent p{
+        font-size: 0.65rem;
+        margin-top: 10px;
+    }
+    .spacontent ul li{
+        font-size: 0.64rem;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    footer .map iframe{
+        width: 350px;
+        height: 250px;
+    }
+    footer .about{
+        width: 330px;
+        height: 230px;
+        margin: 0;
+    }
+    .about p{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .about ul li{
+        font-size: 0.8rem;
     }
 }
