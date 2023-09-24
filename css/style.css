@@ -985,7 +985,12 @@ footer .about{
         letter-spacing: 0.3px;
     }
     .bookbtn .callnow{
-        padding: 0px 7px 1px 7px;
+        width: 80px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
     }
     .bookbtn .gmailnow{
         padding: 0px 17px 2px 17px;
