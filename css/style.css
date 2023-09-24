@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&display=swap');
 
 * {
     margin: 0;
@@ -354,7 +355,7 @@ nav ul span {
 
 #room {
     width: 100%;
-    height: 850px;
+    height: 800px;
     font-family: 'Roboto', sans-serif;
     /* background-color: aquamarine; */
     display: flex;
@@ -362,7 +363,7 @@ nav ul span {
 }
 .roombox {
     width: 1100px;
-    height: 850px;
+    height: 800px;
     /* background-color: bisque; */
     display: flex;
     align-items: center;
@@ -443,8 +444,68 @@ h3::after{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
+
+.booking{
+    width: 100%;
+    height: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking .book{
+    width: 1100px;
+    height: 110px;
+    background: linear-gradient(45deg,rgba(119, 123, 10, 0.146), rgba(14, 57, 113, 0.422));
+    border: 2px double rgba(58, 4, 37, 0.56);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bookcontent h4{
+    font-family: 'Croissant One', cursive;
+    font-size: 1.3rem;
+}
+.bookbtn{
+    color: #fff;
+    text-transform: uppercase;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+}
+.bookbtn i{
+    color: #fff;
+    margin-right: 10px;
+}
+.bookbtn span{
+    color: #fff;
+    letter-spacing: 0.8px;
+}
+.bookbtn .callnow{
+    padding: 7px 20px;
+    background-color: #082664;
+    border-radius: 25px;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+.bookbtn .callnow:hover, .bookbtn .gmailnow:hover{
+    box-shadow: 0px 0px 8px #000;
+}
+
+.bookbtn .gmailnow{
+    padding: 7px 38px;
+    background-color: #082664;
+    border-radius: 25px;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
 
 #facilities{
     width: 100%;
@@ -579,6 +640,7 @@ h3::after{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 #qsv h3{
     margin-top: 20px;
@@ -656,9 +718,29 @@ h3::after{
     width: 225px;
 }
 
+.laundry{
+    width: 100%;
+    height: 500px;
+    /* background-color: #082664; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.laundryphoto{
+    width: 500px;
+    height: 400px;
+}
+.laundryphoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 #spa{
     width: 100%;
-    height: 800px;
+    height: 750px;
     /* background-color: aquamarine; */
 
     display: flex;
@@ -668,7 +750,7 @@ h3::after{
 }
 .spabox{
     width: 450px;
-    height: 650px;
+    height: 600px;
     /* background-color: #19191e; */
     border: 1px solid #0000006a;
     box-shadow: 1px 1px 2px 3px #0000005c;
@@ -730,7 +812,10 @@ footer .about{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
+
 
 /* Responsive */
 
@@ -819,7 +904,7 @@ footer .about{
     }
     .roombox{
         width: 350px;
-        height: 1000px;
+        height: 1030px;
         justify-content: center;
     }
     .roombox h3{
@@ -850,6 +935,30 @@ footer .about{
     .roomcontent .rimg{
         width: 165px;
         height: 130px;
+    }
+    .booking .book{
+        width: 350px;
+        height: 75px;
+    }
+    .bookcontent h4{
+        font-size: 0.8rem;
+    }
+    .bookbtn{
+        height: 70px;
+    }
+    .bookbtn i{
+        font-size: 0.6rem;
+        margin-right: 3px;
+    }
+    .bookbtn span{
+        font-size: 0.6rem;
+        letter-spacing: 0.3px;
+    }
+    .bookbtn .callnow{
+        padding: 0px 7px 2px 7px;
+    }
+    .bookbtn .gmailnow{
+        padding: 0px 17px 2px 17px;
     }
     #facilities{
         height: 325px;
@@ -1002,4 +1111,5 @@ footer .about{
     .about ul li{
         font-size: 0.8rem;
     }
+    
 }
