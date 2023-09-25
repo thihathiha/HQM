@@ -923,12 +923,12 @@ footer .about{
         height: 130px;
     }
     .intro{
-        height: 150px;
+        height: 130px;
         justify-content: center;
     }
     .intro .greeting{
         width: 220px;
-        height: 115px;
+        height: 130px;
         margin-left: 8px;
     }
     .intro .greeting p{
@@ -938,7 +938,7 @@ footer .about{
     }
     .intro .award{
         width: 130px;
-        height: 115px;
+        height: 130px;
         margin-left: 3px;
     }
     .intro .award p{
