@@ -557,7 +557,7 @@ h3::after{
 
     transition: all 0.2s;
 
-    border:  5px solid #e9e9e9;
+    border:  5px solid #e9e9e979;
 }
 .pricebox .pricecontent:hover{
     border-color: hsla(203, 90%, 13%, 1);;
@@ -748,7 +748,7 @@ h3::after{
 .laundryservice{
     width: 1000px;
     height: 300px;
-    background: linear-gradient(100deg,rgba(119, 123, 10, 0.146) 65%,rgba(14, 57, 113, 0.422) 50%);
+    background: linear-gradient(100deg,rgba(72, 72, 55, 0.296) 65%,rgba(14, 57, 113, 0.422) 50%);
 
     display: flex;
     justify-content: space-around;
