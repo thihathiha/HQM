@@ -86,7 +86,7 @@ header .mode{
 header .mode i{
     font-size: 1.4rem;
 }
-.fa-toggle-on{
+.fa-toggle-off{
     cursor: pointer;
     margin: 0 3px;
 }
@@ -892,6 +892,9 @@ footer .about{
     }
     header .mode i{
         font-size: 0.7rem;
+    }
+    .fa-toggle-off{
+        margin: 0;
     }
     #banner{
         height: 145px;

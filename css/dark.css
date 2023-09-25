@@ -891,6 +891,9 @@ footer .about{
     header .mode i{
         font-size: 0.7rem;
     }
+    .fa-toggle-on{
+        margin: 0;
+    }
     /* .bannerani{
         top: 25%;
         left: 48%;
